@@ -1,7 +1,8 @@
 import Vue from 'vue'
 import App from './App.vue'
-import {Button, Radio, Container, Main, Header, Aside, Menu,Submenu, MenuItem, MenuItemGroup} from 'element-ui'
+import {Button, Radio, Container, Main, Header, Aside, Menu,Submenu, MenuItem, MenuItemGroup, Dropdown,DropdownMenu,DropdownItem} from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css';
+import './assets/less/index.less'
 
 import router from '../router'
 
@@ -18,6 +19,10 @@ Vue.use(Menu)
 Vue.use(Submenu)
 Vue.use(MenuItem)
 Vue.use(MenuItemGroup)
+Vue.use(Dropdown)
+Vue.use(DropdownMenu)
+Vue.use(DropdownItem)
+
 
 new Vue({
   router,
