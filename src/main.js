@@ -5,6 +5,7 @@ import 'element-ui/lib/theme-chalk/index.css';
 import './assets/less/index.less'
 
 import router from '../router'
+import store from '../store'
 
 Vue.config.productionTip = false
 Vue.use(Button)
@@ -25,6 +26,7 @@ Vue.use(DropdownItem)
 
 
 new Vue({
+  store,
   router,
   render: h => h(App),
 }).$mount('#app')
